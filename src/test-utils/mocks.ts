@@ -3,11 +3,11 @@ const mockMeta = {
 }
 
 const mockFacebook = {
-    url: "https://adobe-weather.bradgarropy.vercel.app",
+    url: "https://adobe-weather.vercel.app",
     type: "website",
     title: "🌡 adobe weather",
     description: "🌡 adobe interview question - weather",
-    image: "https://adobe-weather.bradgarropy.vercel.app/facebook.png",
+    image: "https://adobe-weather.vercel.app/facebook.png",
 }
 
 const mockTwitter = {
@@ -15,7 +15,7 @@ const mockTwitter = {
     site: "@bradgarropy",
     title: "🌡 adobe weather",
     description: "🌡 adobe interview question - weather",
-    image: "https://adobe-weather.bradgarropy.vercel.app/twitter.png",
+    image: "https://adobe-weather.vercel.app/twitter.png",
 }
 
 export {mockFacebook, mockMeta, mockTwitter}
