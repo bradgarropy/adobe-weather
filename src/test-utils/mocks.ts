@@ -1,21 +1,21 @@
 const mockMeta = {
-    title: "next starter",
+    title: "🌡 adobe weather",
 }
 
 const mockFacebook = {
-    url: "https://next-starter.bradgarropy.vercel.app",
+    url: "https://adobe-weather.bradgarropy.vercel.app",
     type: "website",
-    title: "next starter",
-    description: "⏭ next.js starter",
-    image: "https://next-starter.bradgarropy.vercel.app/facebook.png",
+    title: "🌡 adobe weather",
+    description: "🌡 adobe interview question - weather",
+    image: "https://adobe-weather.bradgarropy.vercel.app/facebook.png",
 }
 
 const mockTwitter = {
     card: "summary",
     site: "@bradgarropy",
-    title: "next starter",
-    description: "⏭ next.js starter",
-    image: "https://next-starter.bradgarropy.vercel.app/twitter.png",
+    title: "🌡 adobe weather",
+    description: "🌡 adobe interview question - weather",
+    image: "https://adobe-weather.bradgarropy.vercel.app/twitter.png",
 }
 
 export {mockFacebook, mockMeta, mockTwitter}

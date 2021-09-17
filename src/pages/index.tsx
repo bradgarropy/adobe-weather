@@ -6,7 +6,7 @@ import {FC} from "react"
 const IndexPage: FC = () => {
     return (
         <Layout>
-            <SEO title="next starter" />
+            <SEO title="🌡 adobe weather" />
             <Weather />
         </Layout>
     )
