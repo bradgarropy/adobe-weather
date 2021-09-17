@@ -1,16 +1,11 @@
-import Footer from "components/Footer"
-import Header from "components/Header"
+import {lightTheme, Provider, SSRProvider} from "@adobe/react-spectrum"
 import {FC} from "react"
-
-import styles from "./Layout.module.css"
 
 const Layout: FC = ({children}) => {
     return (
-        <div className={styles.layout}>
-            <Header />
-            <div className="container">{children}</div>
-            <Footer />
-        </div>
+        <SSRProvider>
+            <Provider theme={lightTheme}>{children}</Provider>
+        </SSRProvider>
     )
 }
 
