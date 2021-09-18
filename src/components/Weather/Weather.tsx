@@ -1,9 +1,7 @@
-import {Form, SearchField} from "@adobe/react-spectrum"
+import {Form, Grid, SearchField} from "@adobe/react-spectrum"
 import {getWeather, Weather as WeatherType} from "api/weather"
 import Temperature from "components/Temperature"
 import {FC, useState} from "react"
-
-import styles from "./Weather.module.css"
 
 const Weather: FC = () => {
     const [zipCode, setZipCode] = useState("")
@@ -20,8 +18,8 @@ const Weather: FC = () => {
     }
 
     return (
-        <div className={styles.weather}>
-            <Form labelPosition="side">
+        <Grid justifyContent="center" marginTop="size-1000" rowGap="size-400">
+            <Form>
                 <SearchField
                     label="Zip Code"
                     value={zipCode}
@@ -32,7 +30,7 @@ const Weather: FC = () => {
             </Form>
 
             <Temperature weather={weather} />
-        </div>
+        </Grid>
     )
 }
 

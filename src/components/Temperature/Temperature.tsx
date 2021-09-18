@@ -1,4 +1,4 @@
-import {Text} from "@react-spectrum/text"
+import {Grid, Text} from "@adobe/react-spectrum"
 import {Weather} from "api/weather"
 import {FC} from "react"
 
@@ -10,17 +10,23 @@ type TemperatureProps = {
 
 const Temperature: FC<TemperatureProps> = ({weather}) => {
     return (
-        <div className={styles.temperature}>
+        <>
             {weather ? (
-                <div className="results">
-                    <Text UNSAFE_className="">{weather.temp}</Text>
+                <Grid justifyItems="center" rowGap="size-100">
+                    <Text UNSAFE_className={styles.temperature}>
+                        {`${weather.temp}°`}
+                    </Text>
 
-                    <Text>{`High ${weather.temp_max}`}</Text>
-                    <Text>{`Low ${weather.temp_min}`}</Text>
-                    <Text>{`Feels like ${weather.feels_like}`}</Text>
-                </div>
+                    <Text UNSAFE_className={styles.feelsLike}>
+                        {`Feels like ${weather.feels_like}°`}
+                    </Text>
+
+                    <Text UNSAFE_className={styles.minMax}>
+                        {`High ${weather.temp_max}° / Low ${weather.temp_min}°`}
+                    </Text>
+                </Grid>
             ) : null}
-        </div>
+        </>
     )
 }
 

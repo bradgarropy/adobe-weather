@@ -1,2 +1,7 @@
 .temperature {
+    font-size: var(--spectrum-global-dimension-font-size-1300);
+}
+
+.feelsLike {
+    font-style: italic;
 }
