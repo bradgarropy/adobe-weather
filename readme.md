@@ -1,6 +1,6 @@
 # 🌡 adobe weather
 
-_A base starter with formatting, linting, serverless, CSS in JS, and SEO included._
+_During an interview with [Adobe][adobe], I was asked to fetch and show the weather using Adobe's in house component library._
 
 [![vercel][vercel-badge]][vercel]
 [![github actions][github-actions-badge]][github-actions]
@@ -8,6 +8,23 @@ _A base starter with formatting, linting, serverless, CSS in JS, and SEO include
 [![contributing][contributing-badge]][contributing]
 [![contributors][contributors-badge]][contributors]
 [![discord][discord-badge]][discord]
+
+## ❓ question
+
+Using [React][react] and Adobe's [React Spectrum][spectrum], fetch and display the weather based on a user provided zip code. Use [OpenWeatherMap][open-weather] to retrieve the weather data.
+
+## 🤔 assumptions
+
+For the purposes of this exercise, I assumed we were only interested in the temperature information.
+
+## 💀 execution
+
+```bash
+git clone https://github.com/bradgarropy/adobe-weather.git
+cd adobe-weather
+npm install
+npm start
+```
 
 ## ✨ contributors
 
@@ -37,3 +54,7 @@ _A base starter with formatting, linting, serverless, CSS in JS, and SEO include
 [contributors-badge]: https://img.shields.io/github/all-contributors/bradgarropy/adobe-weather?style=flat-square
 [discord]: https://bradgarropy.com/discord
 [discord-badge]: https://img.shields.io/discord/748196643140010015?style=flat-square
+[adobe]: https://www.adobe.com
+[react]: https://reactjs.org
+[spectrum]: https://react-spectrum.adobe.com
+[open-weather]: https://openweathermap.org
