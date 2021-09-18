@@ -1,8 +1,13 @@
+import {lightTheme, Provider, SSRProvider} from "@adobe/react-spectrum"
 import {render, RenderOptions, RenderResult} from "@testing-library/react"
 import {ReactElement} from "react"
 
 const Providers = ({children}) => {
-    return <>{children}</>
+    return (
+        <SSRProvider>
+            <Provider theme={lightTheme}>{children}</Provider>
+        </SSRProvider>
+    )
 }
 
 const customRender = (

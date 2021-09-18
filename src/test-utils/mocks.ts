@@ -18,4 +18,11 @@ const mockTwitter = {
     image: "https://adobe-weather.vercel.app/twitter.png",
 }
 
-export {mockFacebook, mockMeta, mockTwitter}
+const mockWeather = {
+    temp: 83,
+    temp_max: 86,
+    temp_min: 79,
+    feels_like: 86,
+}
+
+export {mockFacebook, mockMeta, mockTwitter, mockWeather}
